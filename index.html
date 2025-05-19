@@ -5,39 +5,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bjørns Vindusvask</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
     }
+    body {
+      font-family: 'Raleway', sans-serif;
+    }
   </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
+<body class="bg-white text-gray-800">
+  <!-- Navigasjon -->
+  <nav class="w-full bg-white shadow fixed top-0 left-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <div class="flex items-center space-x-2">
+        <img src="Logo.png" alt="Logo" class="w-20 h-20 object-contain" />
+        <div class="flex flex-col">
+          <span class="font-bold text-lg leading-tight">Bjørns Vindusvask</span>
+          <span class="text-xs text-gray-500">Jørgen Aksnes</span>
+        </div>
+      </div>
+      <div class="space-x-6 hidden md:flex">
+        <a href="#tjenester" class="hover:text-blue-600 transition">Tjenester</a>
+        <a href="#om-oss" class="hover:text-blue-600 transition">Om oss</a>
+        <a href="#ansatte" class="hover:text-blue-600 transition">Våre Ansatte</a>
+        <a href="#omrade" class="hover:text-blue-600 transition">Område</a>
+        <a href="#kontakt" class="hover:text-blue-600 transition">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+  <div class="h-20"></div> <!-- Gir plass til navbaren så innholdet ikke havner under -->
+
   <!-- Hero -->
-  <section class="bg-blue-100 min-h-screen flex flex-col justify-center items-center text-center px-4">
-    <h1 class="text-4xl font-bold mb-4">Bjørns Vindusvask</h1>
-    <p class="text-xl max-w-xl mb-6">Profesjonell vindusvask i området – grundig, effektivt og alltid med et smil.</p>
+  <section
+  class="bg-blue-100 min-h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden"
+  style="background-image: url('background.jpg'); background-size: cover; background-position: center;"
+>
+  <div class="absolute inset-0 bg-blue-100 bg-opacity-70"></div>
+  <div class="relative z-10 flex flex-col items-center">
+    <div class="flex items-center space-x-4 mb-6">
+      <img src="Logo.png" alt="Logo" class="w-24 h-24 object-contain" />
+      <div class="flex flex-col items-start">
+        <span class="font-bold text-3xl md:text-4xl leading-tight">Bjørns Vindusvask</span>
+        <span class="text-sm text-gray-500">Jørgen Aksnes</span>
+      </div>
+    </div>
+    <p class="text-2xl font-semibold mb-2 text-center">Bjørns vindusvask har vært i bransjen i 40 år. Vi kan vaske vinduer.</p>
+    <p class="text-xl max-w-xl mb-6 text-center">Profesjonell vindusvask – for firma og private.</p>
     <a href="#kontakt" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Kontakt oss</a>
-  </section>
+  </div>
+</section>
 
   <!-- Tjenester -->
-  <section class="py-16 px-4 bg-white">
+  <section id="tjenester" class="py-16 px-4 bg-white">
     <h2 class="text-3xl font-bold text-center mb-10">Tjenester</h2>
+    <div class="p-6 border rounded-xl shadow-sm text-center mb-6">
+      <h3 class="text-xl font-semibold mb-2">Vindusvask</h3>
+      <p>Vi vasker private boliger, borettslag og forretningsbygg.</p>
+    </div>
+    <div class="flex justify-center">
+      <video controls loop muted class="rounded-xl shadow w-full max-w-xl">
+        <source src="vindusvask.mp4" type="video/mp4">
+        Din nettleser støtter ikke video.
+      </video>
+    </div>
+  </section>
+
+  <!-- Om oss -->
+  <section id="om-oss" class="py-16 px-4 bg-blue-50">
+    <h2 class="text-3xl font-bold text-center mb-10">Om oss</h2>
+    <p class="max-w-2xl mx-auto text-center">
+      Bjørns vindusvask ble startet av Bjørn Aksnes på 70-tallet. 
+      Firmaet drives nå av Jørgen Aksnes, Bjørns sønn. 
+      Jørgen har jobbet som vinduspusser siden 1992.
+      Vi har mange kunder som har fulgt oss fra begynnelsen. 
+      Det tror vi er fordi vi er effektive og gjør en god jobb. 
+    </p>
+    <p class="max-w-2xl mx-auto text-center">Vi kjører EL-bil.</p>
+  </section>
+
+  <!-- Våre Ansatte -->
+  <section id="ansatte" class="py-16 px-4 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Våre Ansatte</h2>
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <div class="p-6 border rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">Vindusvask</h3>
-        <p>Vi vasker alle typer vinduer, både for private og bedrifter.</p>
+        <h3 class="text-xl font-semibold mb-2">Jørgen Aksnes</h3>
+        <p>Vinduspusser</p>
+        <p>Telefon: +47 906 64 067</p>
+        <p>E-post: <a href="mailto:bjornsvindusvask.jorgenaksnes@gmail.com">bjornsvindusvask.jorgenaksnes@gmail.com</a></p>
       </div>
       <div class="p-6 border rounded-xl shadow-sm">
-        <h3 class="text-xl font-semibold mb-2">Fasadevask</h3>
-        <p>Skånsom og grundig rengjøring av fasader og kledning.</p>
+        <h3 class="text-xl font-semibold mb-2">Eva Aksnes</h3>
+        <p>Kontor</p>
+        <p>Telefon: +47 479 18 079</p>
+        <p>E-post: <a href="mailto:bjornsvindusvask.evaaksnes@gmail.com">bjornsvindusvask.evaaksnes@gmail.com</a></p>
       </div>
     </div>
   </section>
 
+
   <!-- Område -->
-  <section class="py-16 px-4 bg-blue-50">
+  <section id="omrade" class="py-16 px-4 bg-blue-50">
     <h2 class="text-3xl font-bold text-center mb-10">Vi dekker</h2>
-    <p class="max-w-2xl mx-auto text-center">Vi tilbyr våre tjenester i Oslo, Bærum, Asker og nærliggende områder.</p>
+    <p class="max-w-2xl mx-auto text-center">Vi tilbyr våre tjenester i Stavanger, Sandnes og nærliggende områder.</p>
   </section>
 
   <!-- Kontakt -->
@@ -60,8 +131,8 @@
         <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Send melding</button>
       </form>
       <div class="mt-8 text-center">
-        <p>Telefon: <a href="tel:+4790000000" class="text-blue-600">+47 900 00 000</a></p>
-        <p>E-post: <a href="mailto:bjorn@example.com" class="text-blue-600">bjorn@example.com</a></p>
+        <p>Telefon: <a href="tel:+4790664067" class="text-blue-600">+47 906 64 067</a></p>
+        <p>E-post: <a href="mailto:bjornsvindusvask.jorgenaksnes@gmail.com" class="text-blue-600">bjornsvindusvask.jorgenaksnes@gmail.com</a></p>
       </div>
     </div>
   </section>
