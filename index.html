@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bjørns Vindusvask</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Hero -->
+  <section class="bg-blue-100 min-h-screen flex flex-col justify-center items-center text-center px-4">
+    <h1 class="text-4xl font-bold mb-4">Bjørns Vindusvask</h1>
+    <p class="text-xl max-w-xl mb-6">Profesjonell vindusvask i området – grundig, effektivt og alltid med et smil.</p>
+    <a href="#kontakt" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Kontakt oss</a>
+  </section>
+
+  <!-- Tjenester -->
+  <section class="py-16 px-4 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Tjenester</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="p-6 border rounded-xl shadow-sm">
+        <h3 class="text-xl font-semibold mb-2">Vindusvask</h3>
+        <p>Vi vasker alle typer vinduer, både for private og bedrifter.</p>
+      </div>
+      <div class="p-6 border rounded-xl shadow-sm">
+        <h3 class="text-xl font-semibold mb-2">Fasadevask</h3>
+        <p>Skånsom og grundig rengjøring av fasader og kledning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Område -->
+  <section class="py-16 px-4 bg-blue-50">
+    <h2 class="text-3xl font-bold text-center mb-10">Vi dekker</h2>
+    <p class="max-w-2xl mx-auto text-center">Vi tilbyr våre tjenester i Oslo, Bærum, Asker og nærliggende områder.</p>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="kontakt" class="py-16 px-4 bg-white">
+    <h2 class="text-3xl font-bold text-center mb-10">Kontakt oss</h2>
+    <div class="max-w-2xl mx-auto">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="space-y-6">
+        <div>
+          <label for="navn" class="block mb-1 font-medium">Navn</label>
+          <input type="text" id="navn" name="navn" required class="w-full border border-gray-300 p-3 rounded-md" />
+        </div>
+        <div>
+          <label for="epost" class="block mb-1 font-medium">E-post</label>
+          <input type="email" id="epost" name="epost" required class="w-full border border-gray-300 p-3 rounded-md" />
+        </div>
+        <div>
+          <label for="melding" class="block mb-1 font-medium">Melding</label>
+          <textarea id="melding" name="melding" rows="5" required class="w-full border border-gray-300 p-3 rounded-md"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700">Send melding</button>
+      </form>
+      <div class="mt-8 text-center">
+        <p>Telefon: <a href="tel:+4790000000" class="text-blue-600">+47 900 00 000</a></p>
+        <p>E-post: <a href="mailto:bjorn@example.com" class="text-blue-600">bjorn@example.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-sm text-gray-500">
+    © 2025 Bjørns Vindusvask. Alle rettigheter reservert.
+  </footer>
+</body>
+</html>
